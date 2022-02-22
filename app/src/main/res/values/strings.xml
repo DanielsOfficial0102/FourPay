@@ -1,0 +1,457 @@
+<resources>
+    <string name="app_name">FourPay</string>
+
+    //Tela de introdução
+    <string name="entrar_conta">Entrar na minha conta</string>
+    <string name="texto_intro">Uma maneira de ver o mundo financeiro sem complexidades!</string>
+    <string name="btn_começar">Começar</string>
+    <string name="frase_login">Que bom te ver de volta!</string>
+
+    //Tela de login
+    <string name="cpf">CPF</string>
+    <string name="senha">SENHA</string>
+    <string name="acessar">Acessar</string>
+    <string name="mantenha">Matenha-me conectado</string>
+
+    //Tela de cadastro
+    <string name="bem_vindo">Bem vindo</string>
+    <string name="texto_boas_vindas">Para começar, precisaremos que informe alguns dados pessoais para realizarmos a abertura da sua conta.</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="rg">RG</string>
+    <string name="email">E-mail</string>
+    <string name="celular">Celular</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="cep">CEP 00000-000</string>
+    <string name="endereco">Endereço</string>
+    <string name="numero_da_casa">Numero da casa</string>
+    <string name="complemento">Complemento</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+    <string name="renda_mensal">Renda mensal</string>
+    <string name="estado_civil">Estado civil</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="termos">Eu concordo com os</string>
+    <string name="cadastrar">Cadastrar</string>
+
+    <!-- MINHAS CHAVES PIX -->
+    <string name="verificar_chaves_pix">Aqui você pode verificar todas suas chaves pix</string>
+    <string name="minhas_chaves_cpf">CPF</string>
+    <string name="minhas_chaves_cpf_numero">074.353.509.07</string>
+    <string name="minhas_chaves_celular">Celular</string>
+    <string name="minhas_chaves_celular_numero">(11) 98426-1537</string>
+    <string name="minhas_chaves_email">E-mail</string>
+    <string name="minhas_chaves_email_2">FourPay@foursys.com.br</string>
+    <string name="minhas_chaves_aleatoria">Chave Aleatoria</string>
+    <string name="minhas_chaves_aleatoria_2">820907587776632</string>
+    <string name="cd_lapis">Lapis</string>
+    <string name="cd_lixo">Lixo</string>
+
+    //Tela de identidade
+    <string name="confirme_sua_identidade">Confirme sua Identidade!</string>
+    <string name="foto_do_rosto">Por favor, envie uma foto do seu rosto</string>
+    <string name="galeria">Galeria</string>
+    <string name="camera">Camera</string>
+    <string name="enviar">Enviar</string>
+    <string name="termos_condicoes">Termos e Condições</string>
+
+    <string name="loren">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</string>
+    <string name="ou">Ou</string>
+    <string name="condicoes">Termos e Condições</string>
+    <string name="validando_foto">Estamos validando sua foto</string>
+    <string name="tempo_validacao">Isso pode demorar um pouco</string>
+    <string name="foto_validada">Sua foto foi validada com sucesso</string>
+    <string name="foto_não_validada">Sua foto não pode ser validade. Tente novamente</string>
+    <string name="continuar">Continuar</string>
+    <string name="tentar_novamente">Tentar novamente</string>
+    <string name="saldo">253,10</string>
+    <string name="escolha_cartao">Escolha do cartão</string>
+    <string name="cartao_deseja">Qual cartão você deseja?</string>
+    <string name="debito_credito">Cartão de Débido e Crédito</string>
+    <string name="descricao_cartao1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.</string>
+    <string name="debito_credito_internacional">Cartão de Débito e Crédito Internacional</string>
+    <string name="descricao_cartao2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.</string>
+    <string name="pagamento_realizado">Pagamento realizado com sucesso</string>
+    <string name="pagamento_falhou">Ops! Algo deu errado com o seu pagamento. Tente Novamente</string>
+
+
+    <!-- Tela Transferencia-->
+
+    <!-- Spinner bancos-->
+    <string-array name="spn_bancos">
+        <item>Escolha o banco</item>
+        <item>001 BANCO DO BRASIL S.A (BB)</item>
+        <item>237 BRADESCO S.A	</item>
+        <item>335 Banco Digio S.A	</item>
+        <item>260 NU PAGAMENTOS S.A (NUBANK)	</item>
+        <item>290 Pagseguro Internet S.A (PagBank)	</item>
+    </string-array>
+
+    <!-- Spinner Tipo conta-->
+    <string-array name="spn_tipo_conta">
+        <item>Corrente</item>
+        <item>Poupança</item>
+    </string-array>
+
+    <!-- Spinner tipo transferencia-->
+    <string-array name="spn_tipo_transferencia">
+        <item>PIX</item>
+        <item>TED</item>
+    </string-array>
+
+    <string name="fazer_transferencia">Fazer Transferência</string>
+    <string name="saldo_em_conta">Saldo em conta</string>
+    <string name="esconder_mostrar_saldo">esconder_mostrar_Saldo</string>
+    <string name="informe_o_valor">Informe o valor</string>
+    <string name="informe_o_valor_rs">R$</string>
+    <string name="valor_transferencia">00,00</string>
+    <string name="nome_do_banco">Nome do banco</string>
+    <string name="duvida">Duvida</string>
+    <string name="agencia">Agência</string>
+    <string name="conta">Conta</string>
+    <string name="numero_agencia">0000</string>
+    <string name="numero_conta">0000000–0</string>
+    <string name="outra_titularidade">Outra titularidade</string>
+    <string name="mesma_titularidade">Mesma titularidade</string>
+    <string name="nome_do_favorecido">Nome do favorecido</string>
+    <string name="digite_o_nome_completo">Digite o nome completo</string>
+    <string name="cpf_cnpj">CPF/CNPJ</string>
+    <string name="digite_o_cpf_ou_cnpj">Digite o CPF ou CNPJ</string>
+    <string name="salvar_contato">Salvar contato</string>
+    <string name="tipo_de_conta">Tipo de conta</string>
+    <string name="para_quando">Para quando?</string>
+    <string name="hoje_ou_proximo_dia_util">Hoje ou próximo dia útil</string>
+    <string name="agendar">Agendar</string>
+    <string name="tipo_de_transferencia">Tipo de Transferência</string>
+    <string name="cd_botao_voltar">Botão voltar</string>
+    <string name="reais">R$</string>
+    <string name="saldo_exemplo">99.999,00</string>
+
+    <!-- TELA PIX -->
+    <string name="texto_ainda_nao_tem_chave">Ainda não tem chave Pix no FourPay? \nNão perca tempo, é fácil, prático e seguro.</string>
+    <string name="gerar_chave">Gerar chave</string>
+    <string name="transferir_pix">Transferir via Pix</string>
+    <string name="info_pix">Faça uma transferência utilizando a chave Pix \nou dados bancários</string>
+    <string name="em_breve">Em breve…</string>
+    <string name="minhas_chaves">Minhas Chaves</string>
+    <string name="info_chaves_pix">Gerencie suas chaves Pix</string>
+    <string name="pagar_qr_code">Pagar com QR Code</string>
+    <string name="info_pagar_qr_code">Leia o código QR Code para efetuar o pagamento</string>
+    <string name="cobrar_alguem">Cobrar alguém</string>
+    <string name="info_cobrar_alguem">Crie um QR Code para receber dinheiro na hora</string>
+    <string name="pix_copia_cola">Pix Copia e Cola</string>
+    <string name="info_pix_copia_cola">Cole o código QR Code que você copiou para fazer \no pagamento</string>
+
+    <!-- TELA TRANSFERÊNCIA PIX -->
+    <string name="escolha_chave">Escolha a chave do destinatário</string>
+    <string name="dados_conta">Dados da conta</string>
+
+    <!-- TELA CONFIRMAÇÃO DE DADOS PIX  -->
+    <string name="confimacao_pix">Confirme as informações antes de prosseguir</string>
+    <string name="valor_pag">Valor do pagamento</string>
+    <string name="confirmacao_dados">Confirmação de dados</string>
+    <string name="destinatario">Destinatário</string>
+    <string name="nome_juliano">Juliano Freitas da Costa</string>
+    <string name="cpf_dados">***.492.978-**</string>
+    <string name="instituição">Instituição</string>
+    <string name="banco_dados">Banco Brasileiro S.A.</string>
+    <string name="chave">Chave</string>
+    <string name="data_pag_dados">Data de Pagamento</string>
+    <string name="days_dados">07/01/2022</string>
+    <string name="forma_de_pagamento">Forma de pagamento</string>
+    <string name="realizar_pagamento">REALIZAR PAGAMENTO</string>
+    <string name="valor_dados">R$ 875,96</string>
+
+    <!-- TELA COMPROVANTE PIX  -->
+    <string name="comprovante_pix">Comprovante de pagamento Pix</string>
+    <string name="valor_pix">Valor</string>
+    <string name="pagador">Pagador</string>
+    <string name="nome_pix">Carlos Alberto Santos</string>
+    <string name="transacao">Transação realizada em</string>
+    <string name="data_hora_pix">07/01/2022 – 10:22:31</string>
+    <string name="identificacao_transicao">ID da transição</string>
+    <string name="id">5G14H6GF985A14JK362B17A151F6229F262DFD145D2A64B</string>
+    <string name="ajuda">Em caso de dúvidas, entre em contato no 0000–0000 (capitais e regiões metropolitanas) ou 0000–000–0000 (demais localidades) e informe o ID da transação</string>
+    <string name="retornar">RETORNAR AO MENU PRINCIPAL</string>
+    <string name="compartilhar">COMPARTILHAR</string>
+
+    <!-- TELA DE NOVA CHAVE PIX -->
+    <string name="nova_chave_pix">Nova Chave Pix</string>
+    <string name="tipo_chave_cadastro">Escolha o tipo de chave que deseja cadastrar</string>
+    <string name="email_pix">E-mail</string>
+    <string name="celular_pix">Celular</string>
+    <string name="cpf_cnpj_pix">CPF ou CNPJ</string>
+    <string name="chave_aleatoria_pix">Chave Aleatoria</string>
+    <string name="limite_de_criacao_do_pix">Você ainda pode cadastrar 5 chaves</string>
+    <string name="trocar_tipo_de_chave">Trocar o tipo de chave</string>
+
+    <!-- TELA DE NOVA CHAVE PIX E-MAIL -->
+    <string name="nova_chave_email">Nova Chave E-Mail</string>
+    <string name="insira_email_cadastrar_pix">Insira o email que deseja enviar</string>
+    <string name="exemplo_chave_email">ex: danielsofficial@outlook.com</string>
+    <string name="avancar">Avançar</string>
+
+    <!-- TELA DE NOVA CHAVE PIX CELULAR -->
+    <string name="nova_chave_celular">Nova Chave Celular</string>
+    <string name="insira_celular_pix">Insira o numero de celular que deseja cadastrar</string>
+    <string name="exemplo_chave_celular">ex: (00) 00000–0000 </string>
+
+    <!-- TELA DE NOVA CHAVE PIX CPF OU CNPJ -->
+    <string name="nova_chave_cpf_cnpj">Nova Chave CPF e CNPJ</string>
+    <string name="insira_cpf_cnpj">Insira o CPF ou CNPJ que deseja cadastrar</string>
+    <string name="exemplo_chave_cpf_cnpj">ex: 000,000,000–00 </string>
+
+    <!-- TELA DE NOVA CHAVE PIX ALEATORIA -->
+    <string name="nova_chave_aleatoria">Nova Chave Aleatoria</string>
+    <string name="chave_aleatoria">Chave aleatória</string>
+    <string name="exemplo_chave_aleatoria">ex: ********** </string>
+
+    <string name="pix_email">Pix por e-mail</string>
+    <string name="pix_celular">Pix por celular</string>
+    <string name="pix_cpf_cnpj">Pix por CPF ou Cnpj</string>
+    <string name="pix_chave_aleatoria">Pix por chave aleatoria</string>
+
+    <string name="pix_email_descricao">Insira o e-mail</string>
+    <string name="pix_celular_descricao">Insira numero de celular</string>
+    <string name="pix_cpf_cnpj_descricao">Insira o CPF ou CNPJ</string>
+    <string name="pix_chave_aleatoria_descricao">Insira a chave aleatória</string>
+
+    <string-array name="spinner_operadora">
+        <item>Claro</item>
+        <item>Tim</item>
+        <item>Vivo</item>
+        <item>Oi</item>
+    </string-array>
+
+    <string-array name="spinner_forma_pagamento">
+        <item>Crédito</item>
+        <item>Débito</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transferir">Transferir</string>
+    <string name="four">four</string>
+    <string name="pay">pay</string>
+    <string name="pix">Pix</string>
+    <string name="bairro">Bairro</string>
+    <string name="numero">(00)0000-0000</string>
+
+    <!-- Spinner configuração-->
+    <string-array name="spn_dia">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="spn_mes">
+        <item>Janeiro</item>
+        <item>Fevereiro</item>
+        <item>Março</item>
+        <item>Abril</item>
+        <item>Maio</item>
+        <item>Junho</item>
+        <item>Julho</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outubro</item>
+        <item>Novembro</item>
+        <item>Dezembro</item>
+    </string-array>
+
+    <string-array name="spn_ano">
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+
+    <!--RECARGA DE CELULAR-->
+
+    <string name="continuar_recarga">continuar</string>
+    <string name="confirmar_recarga">confirmar</string>
+    <string name="confirme_os_dados_informados">Confirme os dados informados</string>
+    <string name="pagamento">Pagamento:</string>
+    <string name="meio_pagamento">Crédito</string>
+    <string name="operadora">Operadora:</string>
+    <string name="operadora_seleconada">Oi</string>
+    <string name="valor">Valor:</string>
+    <string name="valor_reais">R$ 15,00</string>
+    <string name="numero_telefone">(27)988297502</string>
+    <string name="numerox">Número:</string>
+
+    <!-- TELA DE CONFIRMAÇÃO EMPRÉSTIMOS -->
+    <string name="quantidade_parcelas">Quantidade de parcelas:</string>
+    <string name="data_pagamento">Data para pagamento:</string>
+    <string name="contratar">Contratar</string>
+    <string name="ola">Olá</string>
+
+    <!--TELA EMPRÉSTIMOS-->
+
+    <string-array name="operadoras_array">
+        <item></item>
+        <item>Oi</item>
+        <item>Vivo</item>
+        <item>Tim</item>
+        <item>Claro</item>
+    </string-array>
+
+    <string-array name="pagamento_array">
+        <item></item>
+        <item>Débito</item>
+        <item>Crédito</item>
+    </string-array>
+
+    <string-array name="valor_array">
+        <item></item>
+        <item>10.00</item>
+        <item>15.00</item>
+        <item>20.00</item>
+        <item>25.00</item>
+        <item>35.00</item>
+        <item>40.00</item>
+        <item>50.00</item>
+        <item>60.00</item>
+    </string-array>
+
+    <string-array name="parcelas">
+        <item></item>
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+        <item>4x</item>
+        <item>5x</item>
+        <item>6x</item>
+        <item>7x</item>
+        <item>8x</item>
+        <item>9x</item>
+        <item>10x</item>
+        <item>11x</item>
+        <item>12x</item>
+        <item>13x</item>
+        <item>14x</item>
+        <item>15x</item>
+        <item>16x</item>
+        <item>17x</item>
+        <item>18x</item>
+        <item>19x</item>
+        <item>20x</item>
+        <item>21x</item>
+        <item>22x</item>
+        <item>23x</item>
+        <item>24x</item>
+    </string-array>
+
+
+    <string-array name="data_pagamento">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+
+    <!-- HOME -->
+    <string name="rs">R$:</string>
+    <string name="principais_servicos">Principais Serviços</string>
+    <string name="pagar">Pagar</string>
+    <string name="meus_cartoes">Meus Cartões</string>
+    <string name="emprestimo">Emprestimo</string>
+    <string name="recarga_celular">Recarga Celular</string>
+    <string name="recarga">Recarga</string>
+    <string name="four_shopping">Four Shopping</string>
+    <string name="meu_saldo">Meu Saldo</string>
+    <string name="meu_dinheiro">R$: 1500,00</string>
+    <string name="vantagens">Confira as Vantagens Exclusivas para você</string>
+    <string name="veja_como_recarregar">Veja como recarregar o seu celular</string>
+    <string name="versao">App version 1.0.1</string>
+    <string name="demais_servicos">Demais Serviços</string>
+    <string name="demais_servicos_2">Conheça todos os serviços disponíveis</string>
+    <string name="cartao_credito_home">Cartão de crédito</string>
+    <string name="fatura_atual">Fatura atual</string>
+    <string name="fatura_atual_valor">R$ 291,28</string>
+    <string name="limite_disponivel">Limite disponivel de R$: 1.115,48</string>
+    <string name="precisando_dinheiro">Precisando de dinheiro?</string>
+    <string name="precisando_dinheiro_2">O FourPay tá aqui, pra todos os momentos! \nPra começar um novo projeto, quitar dividas \ncomprar um carro ou o que você precisar.</string>
+    <string name="title_activity_minhas_chaves_pix">MinhasChavesPixActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="cifrao">R$</string>
+    <string name="title_activity_deposito">DepositoActivity</string>
+    <string name="informacao_pix">Estou ciente que outras pessoas irão:\n\n - Visualizar meu nome completo e CPF ou CNPJ, com os primeiros três e os últimos dois números ocultos;\n - Saber que minha conta é do FourPay; \n - Saber que tenho chave Pix Email cadastrado</string>
+    <string name="depositar">Depositar</string>
+</resources>

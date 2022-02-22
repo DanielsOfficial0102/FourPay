@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "103103060934",
+    "project_id": "fourpay-3ed0a",
+    "storage_bucket": "fourpay-3ed0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103103060934:android:12fd14b3c9eb203589b0c7",
+        "android_client_info": {
+          "package_name": "com.example.fourpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103103060934-fghf3mnaqsfk5fdciu63g8888jsjfn98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyTuq8zMVZdvj0m_M28ugSoUD8VTmUFhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103103060934-fghf3mnaqsfk5fdciu63g8888jsjfn98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

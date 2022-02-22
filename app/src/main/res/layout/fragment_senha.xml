@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent2"
+    android:elevation="30dp"
+    tools:context=".SenhaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_azul"
+        android:focusable="true"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/nunito_semi"
+            android:text="Digite sua senha para confirmar o pagamento"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/til_senha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/edt_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_custom"
+            android:drawableEnd="@drawable/ic_senha"
+            android:fontFamily="@font/ubuntu_regular"
+            android:hint="@string/senha"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="@color/azul_claro"
+            android:textCursorDrawable="@drawable/cursor_custom"
+            android:textSize="14sp"
+            app:boxStrokeColor="@color/azul_medio" />
+
+        <android.widget.Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_custom"
+            android:text="Enviar"
+            android:textColor="@color/azul_medio" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

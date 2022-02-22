@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activitys.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="@drawable/background_cartao"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tiazinha_celular_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo_pequena"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="four"
+            android:textColor="@color/azul_claro"
+            android:textSize="26sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/txt_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="pay"
+            android:textColor="@color/cinza"
+            android:textSize="26sp"
+            app:layout_constraintStart_toEndOf="@+id/text1"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+        <TextView
+            android:id="@+id/txt_teajudamos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/nunito_semi"
+            android:text="Te ajudamos a simplificar de vez pagamentos online"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nome" />
+
+
+        <TextView
+            android:id="@+id/Bem_vindo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.8"
+            android:fontFamily="@font/nunito_semi"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:text="Bem vindo de volta ao fourpay, pagamentos descomplicados e muitos benefícios para as suas finanças."
+            android:textColor="@color/preto_claro"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_comecar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_teajudamos" />
+
+        <android.widget.Button
+            android:id="@+id/btn_comecar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn_azul"
+            android:drawableRight="@drawable/ic_seta_direita"
+            android:drawablePadding="-20dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/nunito_bold"
+            app:layout_constraintBottom_toTopOf="@id/text_entrar"
+            android:onClick="abrirCadastro"
+            android:text="@string/btn_começar"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="502dp" />
+
+        <TextView
+            android:id="@+id/text_entrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_login2"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/azul_claro"
+            android:fontFamily="@font/nunito_semi"
+            android:onClick="abrirLogin"
+            android:text="Já tenho uma conta"
+            android:textColor="@color/cinza"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/btn_comecar"
+            app:layout_constraintTop_toBottomOf="@id/btn_comecar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

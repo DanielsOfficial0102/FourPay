@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MeusCartoesActivity">
+
+
+    <ImageView
+        android:id="@+id/image_seta"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/cd_botao_voltar"
+        android:onClick="voltar"
+        android:src="@drawable/ic_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_meusCartoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Meus cartões"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_cartao1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/outro_branco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fisico" />
+
+    <ImageView
+        android:id="@+id/image_cartao_1"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_cartao1"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/cartao_black" />
+
+    <TextView
+        android:id="@+id/txt_fisico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Fisíco"
+        android:textColor="@color/cinza"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_meusCartoes" />
+
+    <TextView
+        android:id="@+id/txt_credito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Cartão de Crédito"
+        android:textColor="@color/outro_cinza"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/view_cartao1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nome_cartao_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Luiz Augusto Morais"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/image_cartao_1"
+        app:layout_constraintTop_toTopOf="@+id/view_cartao1" />
+
+    <TextView
+        android:id="@+id/numero_final_cartao_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Final: 7021"
+        android:textColor="@color/cinza"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/image_cartao_1"
+        app:layout_constraintTop_toBottomOf="@+id/nome_cartao_1" />
+
+
+    <TextView
+        android:id="@+id/txt_debito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Cartão Débito"
+        android:textColor="@color/outro_cinza"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/view_cartao2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view_cartao2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/outro_branco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_cartao1" />
+
+    <ImageView
+        android:id="@+id/image_cartao_blue"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/background_cartao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_cartao2"
+        app:srcCompat="@drawable/cartao_azul" />
+
+    <TextView
+        android:id="@+id/nome_cartao_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Ana Clara da Silva"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/image_cartao_blue"
+        app:layout_constraintTop_toTopOf="@+id/view_cartao2" />
+
+    <TextView
+        android:id="@+id/numero_final_cartao_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_semi"
+        android:layout_marginStart="8dp"
+        android:text="Final: 5934"
+        android:textColor="@color/cinza"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/image_cartao_blue"
+        app:layout_constraintTop_toBottomOf="@+id/nome_cartao_2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

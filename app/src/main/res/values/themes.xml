@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Theme.FourPay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/azul_claro</item>
+        <item name="colorPrimaryVariant">@color/azul_claro</item>
+        <item name="colorOnPrimary">@color/outro_branco</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/azul_claro</item>
+        <item name="colorSecondaryVariant">@color/azul_claro</item>
+        <item name="colorOnSecondary">@color/outro_branco</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/outro_branco</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+    </style>
+
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/azul_medio</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_down</item>
+        <item name="android:hint">"Selecione"</item>
+        <item name="android:textColorHint">@color/azul_claro</item>
+    </style>
+
+    <style name="Theme.FourPay.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FourPay.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FourPay.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

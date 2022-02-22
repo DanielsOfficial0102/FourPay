@@ -1,0 +1,490 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activitys.TransferenciaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="32dp"
+                    android:contentDescription="@string/cd_botao_voltar"
+                    android:onClick="voltar"
+                    android:src="@drawable/ic_voltar"
+                    tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text="@string/fazer_transferencia"
+                    android:textColor="@color/cinza"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/outro_branco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView49">
+
+                <TextView
+                    android:id="@+id/tvSaldoConta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text="Saldo da conta:"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCifrao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text="@string/cifrao"
+                    android:textColor="@color/azul_claro"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvSaldoConta"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_dinheiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:textSize="16sp"
+                    app:boxStrokeWidth="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvCifrao"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/azul_claro">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/tvSaldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/outro_branco"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/nunito_semi"
+                        android:inputType="none"
+                        android:textColor="@color/azul_claro"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_semi"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/informe_o_valor"
+                android:textAlignment="center"
+                android:textColor="@color/preto_claro"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text="@string/informe_o_valor_rs"
+                    android:textColor="@color/preto_claro"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/inf_valor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:autofillHints="1"
+                    android:background="@color/outro_branco"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/valor_transferencia"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/azul_claro"
+                    android:textColorHint="@color/azul_claro"
+                    android:textCursorDrawable="@drawable/cursor_custom"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/azul_claro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/nome_do_banco"
+                    android:textAlignment="center"
+                    android:textColor="@color/cinza"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:contentDescription="@string/duvida"
+                    android:src="@drawable/ic_duvida" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spn_bancos"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_custom"
+                android:entries="@array/spn_bancos"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/agencia"
+                    android:textAlignment="center"
+                    android:textColor="@color/cinza"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:contentDescription="@string/duvida"
+                    android:src="@drawable/ic_duvida" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/conta"
+                    android:textAlignment="center"
+                    android:textColor="@color/cinza"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:contentDescription="@string/duvida"
+                    android:src="@drawable/ic_duvida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_agencia"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="1"
+                    android:background="@drawable/btn_custom"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/numero_agencia"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="@color/azul_medio"
+                    android:textColorHint="@color/azul_claro"
+                    android:textCursorDrawable="@drawable/cursor_custom"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt_conta"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="1"
+                    android:background="@drawable/btn_custom"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/numero_conta"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:textColor="@color/azul_medio"
+                    android:textColorHint="@color/azul_claro"
+                    android:textCursorDrawable="@drawable/cursor_custom"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/azul_claro" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/outro_titular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/azul_claro"
+                    android:checked="true"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text="@string/outra_titularidade"
+                    android:textColor="@color/preto_claro"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/mesmo_titular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/azul_claro"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text="@string/mesma_titularidade"
+                    android:textColor="@color/preto_claro"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/azul_claro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_semi"
+                android:text="@string/nome_do_favorecido"
+                android:textColor="@color/cinza"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edt_destinatario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:autofillHints="1"
+                android:background="@drawable/btn_custom"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/digite_o_nome_completo"
+                android:inputType="text"
+                android:textColor="@color/azul_medio"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_semi"
+                android:text="@string/cpf_cnpj"
+                android:textColor="@color/cinza"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edt_cpf_cpnj"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:autofillHints="1"
+                android:background="@drawable/btn_custom"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/digite_o_cpf_ou_cnpj"
+                android:inputType="number"
+                android:textColor="@color/azul_medio"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/azul_claro" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text="@string/salvar_contato"
+                    android:textColor="@color/preto_claro"
+                    android:textSize="17sp" />
+
+                <Switch
+                    android:id="@+id/switch_salvar_contato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/azul_claro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_semi"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/tipo_de_conta"
+                android:textAlignment="center"
+                android:textColor="@color/cinza"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/spn_tipo_conta"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:autofillHints="1"
+                android:background="@drawable/btn_custom"
+                android:entries="@array/spn_tipo_conta"
+                android:inputType="text"
+                android:textColor="@color/azul_medio"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/azul_claro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_semi"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/tipo_de_transferencia"
+                android:textAlignment="center"
+                android:textColor="@color/preto_claro"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/spn_tipo_transferencia"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:autofillHints="1"
+                android:background="@drawable/btn_custom"
+                android:entries="@array/spn_tipo_transferencia"
+                android:inputType="text"
+                android:textColor="@color/azul_medio"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/azul_claro" />
+
+            <android.widget.Button
+                android:id="@+id/btnContinuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_custom_login"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/transferir"
+                android:textColor="@color/outro_branco"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MinhasChavesPixActivity">
+
+    <ImageView
+        android:id="@+id/img_seta_esquerda"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/cd_botao_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_seta_esquerda" />
+
+    <TextView
+        android:id="@+id/txt_minhas_chaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_verificar_chaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/verificar_chaves_pix"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_minhas_chaves" />
+
+    <TextView
+        android:id="@+id/txt_cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_cpf"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_verificar_chaves" />
+
+    <TextView
+        android:id="@+id/txt_cpf_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_cpf_numero"
+        android:textColor="@color/azul_claro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_cpf" />
+
+    <View
+        android:id="@+id/view_linha_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.4"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_cpf_numero" />
+
+    <ImageView
+        android:id="@+id/img_lapis_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lapis"
+        android:src="@drawable/ic_lapis"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_1"
+        app:layout_constraintEnd_toStartOf="@+id/img_lixo_1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cpf"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <ImageView
+        android:id="@+id/img_lixo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lixo"
+        android:src="@drawable/ic_lixo"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cpf" />
+
+    <TextView
+        android:id="@+id/txt_celular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_celular"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_linha_1" />
+
+    <TextView
+        android:id="@+id/txt_celular_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_celular_numero"
+        android:textColor="@color/azul_claro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_celular" />
+
+    <View
+        android:id="@+id/view_linha_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.4"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_celular_numero" />
+
+    <ImageView
+        android:id="@+id/img_lapis_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lapis"
+        android:src="@drawable/ic_lapis"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_2"
+        app:layout_constraintEnd_toStartOf="@+id/img_lixo_2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_celular" />
+
+    <ImageView
+        android:id="@+id/img_lixo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lixo"
+        android:src="@drawable/ic_lixo"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_celular" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_email"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_linha_2" />
+
+    <TextView
+        android:id="@+id/txt_email_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_email_2"
+        android:textColor="@color/azul_claro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text4" />
+
+    <View
+        android:id="@+id/view_linha_3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.4"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_email_2" />
+
+    <ImageView
+        android:id="@+id/img_lapis_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lapis"
+        android:src="@drawable/ic_lapis"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_3"
+        app:layout_constraintEnd_toStartOf="@+id/img_lixo_3"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <ImageView
+        android:id="@+id/img_lixo_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lixo"
+        android:src="@drawable/ic_lixo"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <TextView
+        android:id="@+id/txt_chave_aleatoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_aleatoria"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_linha_3" />
+
+    <TextView
+        android:id="@+id/txt_chave_aleatoria_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/minhas_chaves_aleatoria_2"
+        android:textColor="@color/azul_claro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_chave_aleatoria" />
+
+    <View
+        android:id="@+id/view_linha_4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.4"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_chave_aleatoria_numero" />
+
+    <ImageView
+        android:id="@+id/img_lapis_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lapis"
+        android:src="@drawable/ic_lapis"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_4"
+        app:layout_constraintEnd_toStartOf="@+id/img_lixo_3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_chave_aleatoria" />
+
+    <ImageView
+        android:id="@+id/img_lixo_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cd_lixo"
+        android:src="@drawable/ic_lixo"
+        app:layout_constraintBottom_toTopOf="@+id/view_linha_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_chave_aleatoria" />
+
+    <TextView
+        android:id="@+id/txt_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/four"
+        android:textColor="@color/azul_claro"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_pay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/pay"
+        android:textColor="@color/cinza"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_four" />
+</androidx.constraintlayout.widget.ConstraintLayout>

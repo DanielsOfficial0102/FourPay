@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/outro_branco"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".activitys.register.FirstRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <!--  LINEAR TOPO BOAS VINDAS  -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_voltar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/cd_botao_voltar"
+                android:onClick="voltar"
+                android:src="@drawable/ic_voltar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="four"
+                android:textColor="@color/azul_claro"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toStartOf="@id/txt_nome"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="pay"
+                android:textColor="@color/cinza"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text1"
+                app:layout_constraintTop_toTopOf="@id/text1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_regular"
+                android:lineSpacingExtra="4dp"
+                android:text="Para finalizar, crie uma senha para seu cartão"
+                android:textAlignment="center"
+                android:textColor="@color/cinza"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_nome" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/til_senha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_senha"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/senha"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_confirmar_senha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_senha"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/confirmar_senha"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:id="@+id/btn_continuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_azul"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/continuar"
+            android:textColor="@color/outro_branco" />
+    </LinearLayout>
+</ScrollView>

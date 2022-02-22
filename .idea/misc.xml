@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/drawable/btn_azul.xml" value="0.2985" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/drawable/btn_azul_claro.xml" value="0.2985" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/drawable/btn_custom.xml" value="0.2985" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_chave_pix.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_first_register.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_home.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_login.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_minhas_chaves_pix.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_pix.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_pix_chave_confirmacao.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_pix_dados.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_recarga.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_transferencia.xml" value="0.3625" />
+        <entry key="..\:/Users/Danie/Downloads/FourPay/app/src/main/res/layout/activity_transferencia_pix.xml" value="0.3625" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/drawable/btn_azul.xml" value="0.3025" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/drawable/btn_azul_anim.xml" value="0.2365" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/drawable/btn_azul_claro.xml" value="0.3005" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/drawable/btn_custom.xml" value="0.3025" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/drawable/button_scan.xml" value="0.2465" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/drawable/ic_pix.xml" value="0.129" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/drawable/progress_btn_layout.xml" value="0.136" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_cartao.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_chave_pix.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_comprovante_pagamento.xml" value="0.4180253623188406" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_configuracao.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_confirmacao.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_confirmacao_dados.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_confirmacao_pix.xml" value="0.20871327254305977" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_confirmar_pagamento.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_deposito.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_digite_codigo_barras.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_emprestimo.xml" value="0.2066869300911854" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_emprestimo_confirmar.xml" value="0.33" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_fifth_register.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_first_register.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_foto.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_fourth_register.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_login.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_main.xml" value="0.2653985507246377" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_meus_cartoes.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_minhas_chaves_pix.xml" value="0.44353182751540043" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_minhas_chaves_pix2.xml" value="0.26132246376811596" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_pagamento_confirmado.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_pix.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_pix_chave_confirmacao.xml" value="0.25679347826086957" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_pix_dados.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_recarga.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_recarga_validacao.xml" value="0.3488943488943489" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_scan_qrcode.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_second_register.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_splash.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_termos.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_third_register.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_transferencia.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_transferencia_pix.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/activity_validar_foto.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/custom_dialog.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/fragment_first.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/fragment_second.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/fragment_senha.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pedro/Desktop/FourPay/app/src/main/res/layout/progress_btn.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

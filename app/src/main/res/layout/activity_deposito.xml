@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".activitys.RecargaActivity">
+
+    <android.widget.Button
+        android:id="@+id/seta_voltar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_voltar"
+        android:backgroundTint="@color/azul_medio"
+        android:onClick="voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="Depósito"
+        android:textColor="@color/preto_claro"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/seta_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/seta_voltar" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Informe o valor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seta_voltar" />
+
+    <EditText
+        android:id="@+id/edt_valor_deposito"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_custom"
+        android:hint="Valor de depósito"
+        android:inputType="numberDecimal"
+        android:maxLength="11"
+        android:textColor="@color/azul_medio"
+        android:textColorHint="@color/azul_claro"
+        android:textCursorDrawable="@drawable/cursor_custom"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Depósito mínimo: R$ 20"
+        app:layout_constraintStart_toStartOf="@id/edt_valor_deposito"
+        app:layout_constraintTop_toBottomOf="@id/edt_valor_deposito" />
+
+    <android.widget.Button
+        android:id="@+id/btn_gerar_boleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_azul"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/nunito_bold"
+        android:padding="16dp"
+        android:text="Gerar boleto"
+        android:textColor="@color/outro_branco"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,216 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/outro_branco"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".activitys.register.FirstRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <!--  LINEAR TOPO BOAS VINDAS  -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_voltar"
+                android:layout_width="32dp"
+                android:onClick="voltar"
+                android:layout_height="32dp"
+                android:contentDescription="@string/cd_botao_voltar"
+                android:src="@drawable/ic_voltar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="four"
+                android:textColor="@color/azul_claro"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toStartOf="@id/txtPay"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txtPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="pay"
+                android:textColor="@color/cinza"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text1"
+                app:layout_constraintTop_toTopOf="@id/text1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--  LINEAR TOPO BOAS VINDAS  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_regular"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/texto_boas_vindas"
+            android:textAlignment="center"
+            android:textColor="@color/cinza"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_nome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_pessoa_dois"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/nome_completo"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp"
+                app:boxStrokeColor="@color/azul_medio"
+                app:helperTextEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/til_cpf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_documentos"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/cpf"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_renda"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_documentos"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/rg"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_email"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_numero"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_celular"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/celular"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/azul_claro"
+            app:boxStrokeColor="@color/azul_medio">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_data_nascimento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/data_de_nascimento"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/azul_claro"
+                android:textCursorDrawable="@drawable/cursor_custom"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:id="@+id/btn_continuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_azul"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/continuar"
+            android:textColor="@color/outro_branco" />
+    </LinearLayout>
+</ScrollView>
